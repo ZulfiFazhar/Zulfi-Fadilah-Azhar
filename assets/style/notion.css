@@ -1,6 +1,6 @@
-/* PORTFOLIO SECTION */
+/* NOTION SECTION */
 
-.portfolio-hero {
+.notion-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,15 +10,8 @@
   height: 100vh;
   background-color: black;
 }
-.portfolio-hero h1 {
+.notion-hero h1 {
   font-family: "Public Sans", sans-serif;
   color: white;
   font-size: 50px;
-}
-.portfolio-hero p {
-  color: white;
-  margin-top: 1rem;
-  text-align: justify;
-  width: 50%;
-  font-size: 1.3em;
 }

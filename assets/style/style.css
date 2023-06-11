@@ -4,7 +4,7 @@
 
 html,
 a {
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("../img/cursor.webp"), auto;
 }
 
 * {
@@ -37,11 +37,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 15%;
-}
-
-nav a img:hover {
-  filter: drop-shadow(-2px 2px 3px black);
-  transition: all 0.2s ease-in-out;
 }
 
 nav ul {
@@ -113,6 +108,11 @@ nav ul li button:hover {
 
 .hero-right {
   width: 50%;
+}
+
+.hero-right img {
+  transform: scaleX(-1);
+  float: right;
 }
 
 /* About Section */
@@ -264,6 +264,7 @@ nav ul li button:hover {
   margin: 1rem 0;
   border-radius: 10px;
   transition: all 0.15s ease-in-out;
+  z-index: 1;
 }
 .cards:hover {
   transform: translate(5px, -5px);
@@ -327,4 +328,10 @@ footer p {
 .social-media ul li a:hover {
   color: rgb(0, 162, 255);
   transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline-section {
+    padding: 40px 15%;
+  }
 }
