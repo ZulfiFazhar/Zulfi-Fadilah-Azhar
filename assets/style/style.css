@@ -1,7 +1,9 @@
 /* HOME SECTION STYLE */
 
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Sora:wght@300;400;500;600;700&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 html,
 a {
   cursor: url("../img/cursor.webp"), auto;
@@ -12,6 +14,9 @@ a {
 }
 body {
   font-family: "Sora", sans-serif;
+}
+.stop-scrolling {
+  overflow-y: hidden;
 }
 .animate-top {
   position: relative;
@@ -41,7 +46,8 @@ nav ul {
   gap: 1.5rem;
   list-style: none;
 }
-nav ul li button {
+nav ul li button,
+nav ul li button a {
   font-family: "Sora", sans-serif;
   border: none;
   text-decoration: none;
@@ -202,7 +208,7 @@ nav ul li button:hover {
   justify-content: center;
 }
 .timeline-section {
-  min-height: 100vh;
+  min-height: fit-content;
   padding: 40px 15px 40px 15px;
 }
 .timeline-items {
@@ -440,11 +446,13 @@ footer p {
     /* background-color: antiquewhite; */
     padding-top: 85px;
   }
-
+  .mobile-title {
+    font-size: 1rem;
+  }
   nav {
     justify-content: space-between;
-    padding: 15px 0;
-    margin: 0;
+    padding: 1rem;
+    /* margin: 1rem; */
     width: 100%;
     z-index: 100;
     /* background-color: aqua; */
@@ -455,9 +463,8 @@ footer p {
 
   nav ul {
     position: absolute;
-    /* left: 0; */
-    top: 85px;
-    /* height: 100%; */
+    top: 40px;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -465,18 +472,16 @@ footer p {
     text-align: left;
     background-color: white;
     padding-left: 10%;
-    /* padding-top: 10%; */
     z-index: 1;
-    transform: translateX(-233%);
+    transform: translateX(100%);
     transition: all 0.5s ease-in-out;
-    /* opacity: 0; */
   }
 
   nav ul.slide {
     opacity: 1;
-    transform: translateX(0);
-    top: 85px;
-    /* height: fit-content; */
+    transform: translateX(30%);
+    top: 40px;
+    height: 100vh;
     padding-bottom: 3rem;
     z-index: -99;
     transition: all 0.5s ease-in-out;
@@ -489,12 +494,49 @@ footer p {
   .menu-toggle {
     display: flex;
     margin-right: 20px;
+    padding-right: 1rem;
   }
 
-  .timeline-items::before {
-    left: 132px;
+  .hero {
+    padding: 5%;
   }
-  .timeline-dot {
-    left: 125px;
+
+  .about-typo h1 {
+    font-size: 2rem;
+  }
+  .about-typo p {
+    font-size: 1rem;
+    margin: 5%;
+  }
+
+  .education-title h1 {
+    font-size: 2rem;
+  }
+  .education-title p {
+    font-size: 1rem;
+  }
+  .timeline-section {
+    padding: 40px 5%;
+  }
+  .timeline-content {
+    padding: 0.8rem;
+  }
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+  .timeline-content p {
+    font-size: 0.8rem;
+  }
+
+  .education-title h1 {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .awards h1 {
+    font-size: 2rem;
+  }
+  .cards {
+    width: 90%;
   }
 }
