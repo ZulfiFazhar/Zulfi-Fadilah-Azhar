@@ -15,9 +15,6 @@ a {
 body {
   font-family: "Sora", sans-serif;
 }
-.stop-scrolling {
-  overflow-y: hidden;
-}
 .animate-top {
   position: relative;
   animation: animatetop 0.8s;
@@ -57,7 +54,7 @@ nav ul li button a {
   transition: all 0.15s ease-in-out;
   font-size: 1rem;
 }
-nav ul li button:hover {
+nav ul li button a:hover {
   color: rgb(0, 162, 255);
   transition: all 0.15s ease-in-out;
 }
@@ -98,7 +95,7 @@ nav ul li button:hover {
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-  transform: rotate(-135deg) translate(-23px, -15px);
+  transform: rotate(-135deg) translate(-22px, -16px);
   width: 3px;
   height: 30px;
 }
@@ -111,7 +108,7 @@ nav ul li button:hover {
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-  transform: rotate(-225deg) translate(-4px, 34px);
+  transform: rotate(135deg) translate(-4px, 34px);
   width: 3px;
   height: 30px;
 }
@@ -463,7 +460,8 @@ footer p {
 
   nav ul {
     position: absolute;
-    top: 40px;
+    top: 0px;
+    padding-top: 66px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -480,11 +478,13 @@ footer p {
   nav ul.slide {
     opacity: 1;
     transform: translateX(30%);
-    top: 40px;
+    top: 0px;
+    padding-top: 66px;
     height: 100vh;
     padding-bottom: 3rem;
     z-index: -99;
     transition: all 0.5s ease-in-out;
+    box-shadow: 2px 0px 24px 0px rgba(124, 124, 124, 0.75);
   }
 
   nav ul li {
