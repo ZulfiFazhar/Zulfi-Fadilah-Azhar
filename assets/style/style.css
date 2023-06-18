@@ -127,9 +127,22 @@ nav ul li button a:hover {
   width: 45%;
 }
 .hero-left h1 {
+  position: relative;
+  display: inline-block;
   font-size: 3rem;
   font-weight: 600;
   margin: 0;
+}
+.hero-left h1::before {
+  position: absolute;
+  content: attr(data-content);
+  color: white;
+  background-color: rgb(0, 162, 255);
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+.hero-left h1:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .hero-left p {
   margin: 1rem 0 0 0;
