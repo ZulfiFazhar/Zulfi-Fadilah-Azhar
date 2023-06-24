@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/portfolio.css" />
+    <link rel="stylesheet" href="assets/style/notion.css" />
+    <link rel="stylesheet" href="assets/style/blog.css" />
+    <link rel="stylesheet" href="assets/style/contact.css" />
+    <link rel="stylesheet" href="assets/style/stars.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/img/avatar.webp" />
+    <title>Zulfi Fadilah Azhar</title>
+  </head>
+  <body>
+    <header>
+      <nav class="fixed">
+        <a href="#"
+          ><img src="assets/img/avatar.webp" alt="Zulfi-avatar" width="50px"
+        /></a>
+        <ul>
+          <li>
+            <button onclick="openMenu('Home')">
+              <a href="#">Home</a>
+            </button>
+          </li>
+          <li>
+            <button onclick="openMenu('Portfolio')">
+              <a href="#">Portfolio</a>
+            </button>
+          </li>
+          <li>
+            <button onclick="openMenu('Notion')">
+              <a href="#">Notion</a>
+            </button>
+          </li>
+          <li>
+            <button onclick="openMenu('Blog')">
+              <a href="#">Blog</a>
+            </button>
+          </li>
+          <li>
+            <button onclick="openMenu('Contact')">
+              <a href="#">Contact</a>
+            </button>
+          </li>
+        </ul>
+
+        <div class="menu-toggle">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="Home" class="menu animate-top" style="display: block">
+        <!-- Hero Section -->
+        <section class="hero">
+          <article class="hero-left">
+            <h1 data-content="Hi, I'm Zulfi Fadilah Azhar">
+              Hi, I'm Zulfi Fadilah Azhar
+            </h1>
+            <p>Informatics Engineering, Cloud and Data Enthusiast.</p>
+            <p>
+              I'm a second-semester Undergraduate Student at Universitas
+              Komputer Indonesia.
+            </p>
+            <a href="mailto:zulfi.fazhar12@gmail.com">Contact Me!</a>
+          </article>
+          <article class="hero-right">
+            <img
+              src="assets/img/avatar-2.svg"
+              alt="hero-section-avatar"
+              width="80%"
+            />
+          </article>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+          <article>
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+            <div class="about-typo">
+              <h1>About Me</h1>
+              <p>
+                Currently, I'm part of a division called
+                <a href="https://codelabs.unikom.ac.id/">UNIKOM CodeLabs</a>
+                as a Data and Cloud Researcher. I'm also a member of the
+                <a
+                  href="https://gdsc.community.dev/universitas-komputer-indonesia/"
+                  >Google Developer Student Clubs UNIKOM</a
+                >
+                Web Development division specializing in Front-End Developer.
+                I'm interested in the world of technology and always follow the
+                developments of technology, whether it's a Smartphone, PC, and
+                also the development of the world of IoT.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+          <div class="education-title">
+            <h1>Education and Experience</h1>
+            <p>My timeline since High School</p>
+          </div>
+          <section class="timeline-section">
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">June 2016 - May 2019</div>
+                <div class="timeline-content">
+                  <h3>SMK Negeri 2 Cimahi</h3>
+                  <p>Mechatronics, Robotics, and Automation Engineering</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Sep 2016 - Apr 2019</div>
+                <div class="timeline-content">
+                  <h3>Robotic Community SMKN 2 Cimahi</h3>
+                  <p>
+                    Sep 2016 - Apr 2019 <br />
+                    Member <br /><br />
+                    Sep 2017 - Aug 2018 <br />
+                    Leader
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jul 2018 - Sep 2018</div>
+                <div class="timeline-content">
+                  <h3>PT. Renerconsys</h3>
+                  <p>Apprenticeship as Electrical Engineering</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jul 2019 - Sep 2021</div>
+                <div class="timeline-content">
+                  <h3>PT. Denso Indonesia</h3>
+                  <p>
+                    Contract Employee. <br /><br />
+                    Jul 2019 - Jul 2020 <br />Finish Good Production
+                    <br /><br />Aug 2020 - Sep 2021 <br />Quality Control
+                    Inspector
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Sep 2022 - Present</div>
+                <div class="timeline-content">
+                  <h3>Universitas Komputer Indonesia</h3>
+                  <p>Bachelor's Degree of Informatics Engineering</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dec 2022 - Present</div>
+                <div class="timeline-content">
+                  <h3>Google Developer Student Clubs - UNIKOM</h3>
+                  <p>Member of Front-End Developer</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Feb 2023 - Present</div>
+                <div class="timeline-content">
+                  <h3>UNIKOM CodeLabs</h3>
+                  <p>Cloud and Data Researcher</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="awards">
+          <h1>Honors and Awards</h1>
+          <p>My Achievements since High School</p>
+          <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="cards">
+              <div class="card-img">
+                <img
+                  src="assets/img/telkom.webp"
+                  alt="Telkom Competition"
+                  width="100%"
+                />
+              </div>
+              <div class="card-title">
+                1st Place Winner of Innovation Competition
+              </div>
+              <div class="card-subtitle">
+                Issued by Telkom University <br />
+                Feb 2018
+              </div>
+            </div>
+            <!-- End Card 1 -->
+            <!-- Card 2 -->
+            <div class="cards">
+              <div class="card-img">
+                <img
+                  src="assets/img/itenas.webp"
+                  alt="Itenas Competition"
+                  width="100%"
+                />
+              </div>
+              <div class="card-title">
+                1st Place Winner of Applicative Robot
+              </div>
+              <div class="card-subtitle">
+                Issued by Institute Technology National<br />
+                Apr 2018
+              </div>
+            </div>
+            <!-- End Card 2 -->
+            <!-- Card 3 -->
+            <div class="cards">
+              <div class="card-img">
+                <img
+                  src="assets/img/almasoem2.webp"
+                  alt="Almasoem Competition"
+                  width="100%"
+                />
+              </div>
+              <div class="card-title">
+                2nd Place Winner of The Scientific Paper Presentation
+                Competition
+              </div>
+              <div class="card-subtitle">
+                Issued by Al-Ma'soem Science Club <br />
+                Apr 2018
+              </div>
+            </div>
+            <!-- End Card 3 -->
+            <!-- Card 4 -->
+            <div class="cards">
+              <div class="card-img">
+                <img
+                  src="assets/img/Astranauts-2023.webp"
+                  alt="Astranauts Competition"
+                  width="100%"
+                />
+              </div>
+              <div class="card-title">
+                2nd Place Winner Student Track Astranauts 2023
+              </div>
+              <div class="card-subtitle">
+                Issued by Astra Digital <br />
+                Jun 2023
+              </div>
+            </div>
+            <!-- End Card 4 -->
+          </div>
+        </section>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="Portfolio" class="menu animate-top" style="display: none">
+        <section class="portfolio-hero">
+          <h1>
+            PORTFOLIO <br />
+            COMING SOON
+          </h1>
+          <!-- <p>COMING SOON!</p> -->
+        </section>
+      </section>
+
+      <!-- Notion -->
+      <section id="Notion" class="menu animate-top" style="display: none">
+        <section class="notion-hero">
+          <h1>
+            NOTION <br />
+            COMING SOON
+          </h1>
+          <!-- <p>COMING SOON!</p> -->
+        </section>
+      </section>
+
+      <!-- Blog -->
+      <section id="Blog" class="menu animate-top" style="display: none">
+        <section class="blog-hero">
+          <h1>
+            BLOG <br />
+            COMING SOON
+          </h1>
+          <!-- <p>COMING SOON!</p> -->
+        </section>
+      </section>
+
+      <!-- Contact -->
+      <section id="Contact" class="menu animate-top" style="display: none">
+        <section class="contact-hero">
+          <h1>
+            CONTACT <br />
+            COMING SOON
+          </h1>
+          <!-- <p>COMING SOON!</p> -->
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+      <p>Let's Connect!</p>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://github.com/ZulfiFazhar" target="_blank"
+              ><i class="ri-github-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/zulfi-fadilah-azhar/"
+              target="_blank"
+              ><i class="ri-linkedin-box-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/zulfifazhar._" target="_blank"
+              ><i class="ri-instagram-line"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@zulfi.fazhar12" target="_blank"
+              ><i class="ri-medium-fill"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      function openMenu(namaMenu) {
+        var i;
+        var x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(namaMenu).style.display = "block";
+      }
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+      const stopScroll = document.querySelector("body");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+        stopScroll.classList.toggle("stop-scrolling");
+      });
+
+      const activePage = window.location;
+      console.log(activePage);
+    </script>
+  </body>
+</html>
