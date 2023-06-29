@@ -23,7 +23,7 @@ const Home = () => {
           <p>Informatics Engineering, Cloud and Data Enthusiast.</p>
           <p>
             I'm a second-semester Undergraduate Student at Universitas Komputer
-            Indonesia.
+            Indonesia. a
           </p>
           <a href="mailto:zulfi.fazhar12@gmail.com">Contact Me!</a>
         </article>
