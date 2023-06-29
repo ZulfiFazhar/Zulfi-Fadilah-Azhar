@@ -4,7 +4,7 @@ html {
 }
 html,
 a {
-  cursor: url("../img/cursor.webp"), auto;
+  cursor: url("./assets/img/cursor.webp"), auto;
 }
 * {
   margin: 0;
